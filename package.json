@@ -1,0 +1,23 @@
+{
+  "name": "secondsite",
+  "version": "1.0.0",
+  "description": "food bloog",
+  "main": "index.js",
+  "scripts": {
+    "test": "forTheEmperor"
+  },
+  "keywords": [
+    "Wyrkowski",
+    "food",
+    "blog",
+    "sass"
+  ],
+  "author": "Dawid Wyrkowski",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

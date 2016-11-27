@@ -1,0 +1,796 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Raleway'
+
+@import grid
+
+@font-face
+	font-family: 'raleway-heavy'
+	src: url('fonts/raleway-heavy.ttf') format('truetype')
+
+@font-face
+	font-family: 'raleway-regular'
+	src: url('fonts/raleway-regular.ttf') format('truetype')
+
+@font-face
+	font-family: 'raleway-bold'
+	src: url('fonts/raleway-bold.ttf') format('truetype')
+
+@font-face
+	font-family: 'raleway-light'
+	src: url('fonts/raleway-light.ttf') format('truetype')	
+
+* 
+	box-sizing: border-box
+$font--size--input: 16px
+$padding--input: 8px	
+$font--size--p: 18px
+$line--height--p: 150%
+$orange: #e43200
+
+.button 
+	text-transform: uppercase
+	font-family: raleway-light
+	font-size: 18px
+	border: none
+	box-shadow:	0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+	cursor: pointer
+	transition: .4s linear
+	text-align: center
+	padding: 15px 30px
+	color: white
+
+body
+	margin: 0 auto
+	padding: 0
+	
+.div--margin--minus
+	margin-bottom: -5px
+
+header 
+	position: relative
+
+	img 
+		width: 100%
+
+	ul 
+		display: inline-block
+		list-style-type: none
+		float: right
+		margin: 0
+		padding: 0
+
+	li
+		float: left
+		text-align: center
+		margin: 0 16px
+		&:hover
+			a
+				border-top: solid 5px #ff6033
+
+	li:last-of-type
+		margin-right: 0
+
+	a 
+		color: black
+		text-transform: uppercase
+		font-family: raleway-regular
+		font-weight: 900
+		padding-top: 7px
+		padding-left: 2px
+		padding-right: 2px
+		transition: 0.2s cubic-bezier(0.6, -0.28, 0.74, 0.05)
+		white-space: nowrap
+		text-decoration: none
+
+	p
+		display: inline-block
+		margin: 0
+		padding: 0	
+
+	nav	
+		height: 130px
+		line-height: 130px
+
+.container
+	max-width: 1000px
+	margin: 0 auto
+
+.logo 
+	display: inline-block
+	float: left
+	font-family: 'Pacifico', cursive
+	font-size: 45px
+
+.menu
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+
+.info
+	position: absolute
+	display: inline-block
+	top: 32%
+
+	p 
+		font-family: raleway-light
+		font-size: $font--size--p
+		line-height: $line--height--p
+		font-weight: 100
+		margin-bottom: 20px
+
+	h1 
+		font-family: raleway-heavy
+		font-size: 55px
+		margin: 0
+		padding-bottom: 20px
+
+	button
+		@extend .button
+		background: #ff6033
+		&:hover
+			background: $orange
+
+#about-us 
+	background: #00c4c4
+	margin: 0
+	padding: 0
+	padding-top: 4%
+	padding-bottom: 2%
+	color: white
+
+	.col-5
+		float: right
+
+	p 
+		font-family: raleway-light
+		margin: 0
+		padding-bottom: 10px
+		line-height: $line--height--p
+		font-size: $font--size--p
+
+	h2
+		font-family: raleway-bold
+		font-size: 80px
+		margin: 0
+		padding: 0
+		padding-bottom: 10px
+		margin-top: 9%
+
+#services 
+	background: #70bfff
+	position: relative
+	font-family: raleway-bold
+
+	.container
+		padding-top: 9%
+		padding-bottom: 9%
+
+	.buttons 
+		margin-top: 7%
+		perspective: 1000px
+
+	button 
+		font-family: raleway-bold
+		height: 80px
+		line-height: 80px
+		margin: 10px 0
+		padding: 0
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		cursor: pointer
+		transition: .6s cubic-bezier(0.43, 0.49, 0.63, 0.85)
+		border: none
+		background: #ffffff
+		transform-style: preserve-3d
+		&:hover
+			background: #ff6033
+			color: white
+			transform: scale(1.05)		
+
+		p 
+			display: inline-block
+			margin: 0
+			padding: 0
+			font-size: 18px
+			text-align: center	
+			border-right: 1px solid grey
+
+		img 
+			float: right
+			width: 45px
+			height: 45px
+			margin: 17.5px 13px
+			transform-style: preserve-3d
+
+	.row 
+		position: relative
+
+	.row:nth-of-type(3)
+		button
+			line-height: 40px 
+
+	.col-5, .col-9
+		float: right
+
+	h3 
+		font-size: 80px
+		color: white
+		position: absolute
+		right: -1%
+		top: 21%
+
+#gallery 
+	background: #ffe92f
+	text-align: center
+
+	h4 
+		margin: 0
+		padding: 0
+		font-family: raleway-bold
+		padding-top: 7%
+		padding-bottom: 2%
+		font-size: 80px
+
+	p 
+		font-family: raleway-light
+		width: 50%
+		margin: 0 auto
+		font-size: $font--size--p
+		margin-bottom: 2.5%
+		line-height: $line--height--p
+
+	.row>div 
+		padding-top: 24px
+		padding-left: 12px
+		padding-right: 12px
+
+	img 
+		width: 100%
+		height: 100%
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		cursor: pointer
+		display: block
+		transition: all .4s linear
+		&:hover
+			opacity: 0.6
+
+	button 
+		@extend .button
+		margin-top: 4%
+		background: #5585a2
+		margin-bottom: 10%
+		transition: all .4s linear
+		&:hover
+			background: #335061
+
+.bg-white 
+	background: white
+	transition: all .4s linear
+	&:hover
+		transform: scale(1.05) 
+	
+#subscribe 
+	background: url(img/bg-subscribe.png)
+	background-size: 100%
+	font-family: raleway-light
+	background-repeat: no-repeat
+	padding-bottom: 10%
+
+	h5 
+		margin-right: 50%
+		font-family: raleway-bold
+		font-size: 40px
+		margin-bottom: 0
+		padding-bottom: 1%
+		padding-top: 5%
+
+	p 
+		padding-bottom: 1%
+		line-height: $line--height--p
+		font-size: $font--size--p
+
+	button 
+		@extend .button
+		margin-left: 12px
+		background: #96b92c
+		&:hover
+			background: #6f8921
+
+	input
+		font-size: $font--size--input
+		padding: $padding--input
+		margin-right: 12px
+		font-family: raleway-light
+		height: 53px
+
+#blog 
+	background: #b07cf7
+	text-align: center
+	color: white
+
+	.row>div 
+		padding: 12px
+
+	h6 
+		margin: 0
+		padding: 0
+		font-size: 80px
+		font-family: raleway-bold
+		padding-bottom: 2%
+		padding-top: 8%
+
+	p 
+		font-family: raleway-light
+		width: 50%
+		margin: 0 auto
+		padding-bottom: 7%
+		font-size: $font--size--p
+		line-height: $line--height--p
+
+	img 
+		cursor: pointer
+		transition: .4s linear
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		width: 100%
+		display: block
+		&:hover
+			transform: scale(1.05)
+
+	button
+		@extend .button
+		background: #f72b3b
+		margin-top: 7%
+		margin-bottom: 11%
+		&:hover
+			background: #b90715
+
+footer 
+	text-align: center
+	background: url(img/footer-bg.png)
+	background-size: cover
+	background-repeat: no-repeat
+	::-webkit-input-placeholder 
+		color: white
+
+	h6 
+		padding: 0
+		padding-top: 9%
+		margin: 0
+		font-family: raleway-bold
+		font-size: 80px
+
+	p 
+		font-family: raleway-light
+		line-height: 80%
+
+		a
+			text-decoration: none
+			color: black
+			&:hover
+				text-decoration: underline
+
+	p:last-of-type 
+		padding-bottom: 3%
+
+	input, textarea 
+		width: 100%
+		resize: none
+		font-family: raleway-light
+		font-size: $font--size--input
+		padding: $padding--input
+		border: none
+		color: white
+		background: rgba(0, 196, 196, 0.7)
+
+	input 
+		height: 45px
+		margin-bottom: 15px
+
+	.row>div:last-of-type 
+		float: right
+		text-align: left
+
+	.col-5 p:nth-of-type(odd) 
+		text-transform: uppercase
+		font-family: raleway-bold
+
+.copyrights 
+	background: #262626
+	position: relative
+	bottom: 0
+	left: 0
+	right: 0
+	margin-top: 8%
+	color: #b9b9b9
+
+	p 
+		margin: 0
+		padding: 0
+		display: inline-block
+		text-align: center
+		padding-top: 20px
+
+	p:first-of-type 
+		float: left
+		text-align: left
+		padding-top: 35px
+
+	p:nth-of-type(2)
+		padding-top: 35px
+		font-family: 'Pacifico', cursive
+		font-size: 26px
+
+	p:nth-of-type(3) 
+		padding-bottom: 2px
+
+	p:nth-of-type(4) 
+		padding-bottom: 20px
+		padding-top: 5px
+		line-height: 110%
+
+	p:nth-of-type(3), p:nth-of-type(4) 
+		float: right
+		text-align: right	
+
+	span 
+		color: #f52b55
+		font-family: raleway-bold
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+
+	.container
+		max-width: 80%
+
+	header
+		li
+			margin: 0 10px
+		a 
+			font-size: 13px
+
+	.info
+		top: 25%
+		p 
+			font-size: 16px
+			font-weight: 100
+			margin-bottom: 20px
+
+		h1 
+			font-family: raleway-heavy
+			margin-top: -10%
+			font-size: 55px
+			margin: 0
+			padding-bottom: 20px
+
+	#about-us 
+		background: #00c4c4
+		margin: 0
+		padding: 0
+		padding-top: 4%
+		padding-bottom: 2%
+		color: white
+
+		.col-5
+			float: right
+
+		p 
+			font-family: raleway-light
+			margin: 0
+			padding-bottom: 10px
+			line-height: 140%
+
+		h2
+			font-family: raleway-bold
+			font-size: 60px
+			text-align: right
+			margin: 0
+			padding: 0
+			padding-bottom: 10px
+			margin-top: 9%
+
+	#services
+		h3
+			font-size: 330%		
+
+@media screen and (min-width: 321px) and (max-width: 767px)
+
+	.container
+		max-width: 80%
+
+	header
+		ul
+			float: right
+			display: inline-block
+			margin-right: 0
+			margin-left: 0
+
+		li
+			display: block
+			float: none
+			height: 20px
+			padding: 10px
+			padding-right: 0
+			margin-right: 0
+			margin: 10px
+			font-size: 10px
+
+		nav
+			height: 50px
+			line-height: 50px	
+
+	.info
+		p 
+			font-size: 12px
+			margin-bottom: 10px
+			width: 90%
+
+		h1 
+			font-size: 28px
+			margin-top: -10px
+			padding-bottom: 10px
+
+	.logo 
+		display: inline-block
+		float: left
+		font-family: 'Pacifico', cursive
+		font-size: 35px		
+		height: 60px
+		line-height: 60px
+
+	.button 
+		font-size: 10px
+		padding: 10px 10px
+
+	#about-us 
+		p 
+			font-size: 10px
+			margin: 0
+			padding-bottom: 10px
+			line-height: 140%
+
+		p:first-of-type	
+			padding-left: 10px
+
+		p:last-of-type
+			margin-top: 8px	
+
+		h2
+			font-size: 40px
+			margin: 0
+			padding: 0
+			padding-bottom: 10px
+			margin-top: 9%	
+
+	#services 
+		h3 
+			font-size: 70px
+			color: white
+			position: absolute
+			right: -1%
+			top: -1%		
+
+	#gallery 
+		p 
+			font-family: raleway-light
+			width: 80%
+			margin: 0 auto
+			font-size: 14px
+			margin-bottom: 2.5%
+			line-height: 150%
+
+		.row>div 
+			padding-top: 12px
+			padding-left: 6px
+			padding-right: 6px
+
+		button
+			margin-top: 8%	
+
+	#subscribe 
+		background-position: 0 50%
+
+		h5 
+			margin-top: 7%
+			font-size: 25px
+		p 
+			font-size: 10px
+			line-height: 100%
+
+		input 
+			margin-right: 12px
+			font-family: raleway-light
+			height: 31px		
+
+	#blog 
+		p 
+			width: 80%
+			font-size: 14px
+
+	footer 
+		p 
+			line-height: 100%
+			margin-top: 0
+			padding-top: 0
+			padding-bottom: 1px
+			margin-bottom: 8px
+
+	.copyrights 
+		p 
+			display: inline-block
+			text-align: center
+			padding-top: 20px
+
+		p:first-of-type 
+			float: left
+			text-align: left
+			padding-top: 15px
+
+		p:nth-of-type(2)
+			padding-top: 15px
+			font-family: 'Pacifico', cursive
+			font-size: 33px
+			text-align: center
+
+		p:nth-of-type(3), p:nth-of-type(4) 
+			margin-top: 5px
+			float: right
+			
+		p:nth-of-type(3)
+			text-align: right
+
+		p:nth-of-type(4)
+			text-align: left
+
+@media screen and (max-width: 320px)
+	
+	.container
+		max-width: 90%
+
+	header
+		ul
+			float: right
+			display: inline-block
+			margin-right: 0
+			margin-left: 0
+
+		li
+			display: block
+			float: none
+			height: 20px
+			padding: 10px
+			padding-right: 0
+			margin-right: 0
+			margin: 10px
+			font-size: 10px
+
+		nav
+			height: 10px
+			line-height: 10px	
+
+	.info
+		p 
+			font-size: 10px
+			margin-bottom: 10px
+			width: 145%
+
+		h1 
+			font-size: 20px
+			margin-top: -10px
+			padding-bottom: 10px
+
+	.logo 
+		display: inline-block
+		float: left
+		font-family: 'Pacifico', cursive
+		font-size: 35px		
+		height: 60px
+		line-height: 60px
+
+	.button 
+		font-size: 10px
+		padding: 10px 10px
+
+	#about-us 
+		p 
+			font-size: 10px
+			margin: 0
+			padding-bottom: 10px
+			line-height: 140%
+
+		p:first-of-type	
+			padding-left: 10px
+
+		p:last-of-type
+			margin-top: 8px	
+
+		h2
+			font-size: 40px
+			margin: 0
+			padding: 0
+			padding-bottom: 10px
+			margin-top: 9%	
+
+	#services 
+		h3 
+			font-size: 70px
+			color: white
+			position: absolute
+			right: -1%
+			top: -1%		
+
+	#gallery 
+		p 
+			font-family: raleway-light
+			width: 80%
+			margin: 0 auto
+			font-size: 14px
+			margin-bottom: 2.5%
+			line-height: 150%
+
+		.row>div 
+			padding-top: 12px
+			padding-left: 6px
+			padding-right: 6px
+
+		button
+			margin-top: 8%	
+
+	#subscribe 
+		background-position: 0 50%
+
+		h5 
+			margin-top: 7%
+			font-size: 25px
+		p 
+			font-size: 10px
+			line-height: 100%
+
+		input
+			margin-right: 12px
+			font-family: raleway-light
+			height: 31px
+
+	#blog 
+		p 
+			width: 80%
+			font-size: 14px
+		img
+			padding: 0
+
+	footer 
+		::-webkit-input-placeholder
+
+
+		p 
+			line-height: 100%
+			margin-top: 0
+			padding-top: 0
+			padding-bottom: 1px
+			margin-bottom: 8px
+			font-size: 90%
+
+	.copyrights 
+		p 	
+			display: inline-block
+			text-align: center
+			padding-top: 20px
+
+		p:first-of-type 
+			float: left
+			text-align: center
+			padding-top: 15px
+
+		p:nth-of-type(2)
+			padding-top: 15px
+			font-family: 'Pacifico', cursive
+			font-size: 33px
+			text-align: center
+
+		p:nth-of-type(3), p:nth-of-type(4) 
+			margin-top: 5px
+			float: right
+			
+		p:nth-of-type(3)
+			text-align: center
+
+		p:nth-of-type(4)
+			text-align: center
