@@ -51,14 +51,4 @@ jspm_packages
 .yarn-integrity
 
 
-
-### Sass ###
-.sass-cache/
-*.css.map
-
-### CSS ###
-
-css/
-*.css
-
 Minimalistic-Vibrant-Food-Blog-Template-Free-PSD.jpg
